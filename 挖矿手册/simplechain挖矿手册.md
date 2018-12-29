@@ -10,15 +10,15 @@
 
 安装步骤：	1).点击下一步
 
-![avatar](/Users/yusheng/Documents/%E6%8C%96%E7%9F%BF%E6%89%8B%E5%86%8C/Windows/%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%80%E6%AD%A5.png)
+![avatar](./Windows/%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%80%E6%AD%A5.png)
 
 ​    			2).选择安装目录，点击安装
 
-![avatar](/Users/yusheng/Documents/%E6%8C%96%E7%9F%BF%E6%89%8B%E5%86%8C/Windows/%E5%AE%89%E8%A3%85%E9%80%89%E6%8B%A9%E7%9B%AE%E5%BD%95.png)
+![avatar](./Windows/%E5%AE%89%E8%A3%85%E9%80%89%E6%8B%A9%E7%9B%AE%E5%BD%95.png)
 
 ​	     		3).安装完成后，点击完成安装成功
 
-![avatar](/Users/yusheng/Documents/%E6%8C%96%E7%9F%BF%E6%89%8B%E5%86%8C/Windows/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png)
+![avatar](./Windows/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png)
 
 
 
