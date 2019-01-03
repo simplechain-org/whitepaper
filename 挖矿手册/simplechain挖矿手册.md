@@ -10,7 +10,9 @@
 
 安装步骤：	1).点击下一步
 
-<div align=center>![avatar](./Windows/%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%80%E6%AD%A5.png)</div>
+<div align=center>
+ ![avatar](./Windows/%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%80%E6%AD%A5.png)
+</div>
 
 ​    			2).选择安装目录，点击安装
 
