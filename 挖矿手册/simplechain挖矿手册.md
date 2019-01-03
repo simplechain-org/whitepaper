@@ -148,9 +148,9 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 
 
-##2.使用Mac挖矿
+## 2.使用Mac挖矿
 
-###（1）.使用钱包挖矿
+### （1）.使用钱包挖矿
 
 请到下载地址…….下载相应操作系统下的安装程序SimpleNode，
 
@@ -188,7 +188,7 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 之后可以将程序最小化到后台，等待挖矿成功。
 
-###（2）.使用sipe挖矿
+### （2）.使用sipe挖矿
 
 请到下载地址https://github.com/simplechain-org/go-simplechain/releases下载相应操作系统下的执行程序sipe-darwin-1.0.0-amd64（Mac版本）
 
@@ -222,7 +222,7 @@ yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x15e8982630b52fb
 
 <div align=center><img src="./Mac/账户变化.png" alt=""/></div>
 
-###（3）.多台电脑使用gominer挖矿
+### （3）.多台电脑使用gominer挖矿
 
 使用一台电脑做主节点，启动命令添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一同挖矿
 
@@ -264,7 +264,7 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --stratumserver 192.168.2.
 
 
 
-##1.使用Ubuntu挖矿
+## 1.使用Ubuntu挖矿
 
 ### （1）.使用钱包挖矿
 
