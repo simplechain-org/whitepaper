@@ -4,7 +4,7 @@
 
 ### （1）使用钱包挖矿
 
-请到下载地址....下载相应操作系统下的安装文件SimpleNode.exe，下载成功之后双击该文件，按照步骤进行安装
+请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装文件SimpleNode.exe，下载成功之后双击该文件，按照步骤进行安装
 
 注：电脑上如果安装了360安全卫士等安全类软件，安装过程中会出现错误提示，把安全类软件退出就可以
 
@@ -152,7 +152,7 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 ### （1）.使用钱包挖矿
 
-请到下载地址…….下载相应操作系统下的安装程序SimpleNode，
+请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装程序SimpleNode，
 
 安装成功后点击启动图标
 
@@ -268,7 +268,7 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --stratumserver 192.168.2.
 
 ### （1）.使用钱包挖矿
 
-请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的安装程序SimpleNode-0.0.14.tar.gz
+请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装程序SimpleNode-0.0.14.tar.gz
 
 解压文件
 
