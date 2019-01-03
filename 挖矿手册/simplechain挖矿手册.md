@@ -310,7 +310,7 @@ yu@qkl:~/Downloads$ tar zxvf SimpleNode-0.0.14.tar.gz
 
 ### （2）.使用sipe挖矿
 
-请到下载地址https://github.com/simplechain-org/go-simplechain/releases下载相应操作系统下的执行程序sipe-linux-1.0.0-amd64（Mac版本）
+请到下载地址https://github.com/simplechain-org/go-simplechain/releases下载相应操作系统下的执行程序sipe-linux-1.0.0-amd64（Linux版本）
 
 添加可执行权限
 
@@ -350,7 +350,7 @@ yu@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x22040901ebb616a9f692
 yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1 --minertype stratum
 ```
 
-请到下载地址https://github.com/simplechain-org/gominer/releases下载相应操作系统下的执行程序gominer-linux-1.0.0-amd64（Mac版本）
+请到下载地址https://github.com/simplechain-org/gominer/releases下载相应操作系统下的执行程序gominer-linux-1.0.0-amd64（Linux版本）
 
 添加可执行权限
 
@@ -381,6 +381,8 @@ yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 --stratumserver 192.168.2.189:88
 钱包中账户收益又增加了！
 
 <div align=center><img src="./Ubuntu/收益到帐.png" alt=""/></div>
+
+其他Linux版本参见以上操作。
 
 
 
