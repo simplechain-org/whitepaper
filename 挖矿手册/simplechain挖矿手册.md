@@ -87,11 +87,11 @@ D:\>sipe-windows-1.0.0-amd64.exe -h
 
 <div align=center><img src="./Windows/sipe%E6%9F%A5%E7%9C%8B%E7%9B%B8%E5%BA%94%E9%80%89%E9%A1%B9.png" alt=""/></div>
 
-节点启动命令：其中，--etherbase指定挖矿钱包地址，--mine开启挖矿，--minerthreads指定挖矿进程数量，--port指定端口号， --datadir在当前目录下新创建文件夹，--ipcdisable关闭IPC服务
+节点启动命令：其中，--etherbase指定挖矿钱包地址，--mine开启挖矿，--minerthreads指定挖矿进程数量，--port指定端口号， --datadir在当前目录下新创建文件夹，--ipcdisable关闭IPC服务，--metrics 启动算力统计
 
 ```powershell
 D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
-27be1ec --mine --minerthreads 1 --port 30313 --datadir sipewa --ipcdisable
+27be1ec --mine --minerthreads 1 --port 30313 --datadir sipewa --ipcdisable --metrics
 ```
 
 如果出现下图红框中的“mined potential block”，表示挖矿成功
@@ -102,6 +102,15 @@ D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
 
 <div align=center><img src="./Windows/sipe%E9%80%9A%E8%BF%87%E9%92%B1%E5%8C%85%E6%9F%A5%E8%AF%A2%E6%94%B6%E7%9B%8A.png" alt="账户收益"/></div>
 
+可以通过如下命令查看自己的算力
+
+```powershell
+D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.getHashrate(function(e,d){console.log(d)})"
+```
+
+第一个数值即为当前算力
+
+
 ### （3）.多台电脑使用gominer挖矿
 
 请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下），命令行启动过程参见上一节。
@@ -110,7 +119,7 @@ D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
 
 ```powershell
 D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
-27be1ec --mine --minerthreads 1 --port 30313 --datadir sipewa --ipcdisable --minertype stratum
+27be1ec --mine --minerthreads 1 --port 30313 --datadir sipewa --ipcdisable --minertype stratum --metrics --stratum.hashrate
 ```
 
 当出现下图中情况，说明主节点已经启动，开始在挖矿了
@@ -143,7 +152,6 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 钱包账户余额又增加了
 
 <div align=center><img src="./Windows/gominer%E6%8C%96%E7%9F%BF%E6%9F%A5%E7%9C%8B%E9%92%B1%E5%8C%85%E6%94%B6%E7%9B%8A.png" alt=""/></div>
-
 
 
 
@@ -206,10 +214,10 @@ yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 -h
 
 <div align=center><img src="./Mac/命令帮助.png" alt=""/></div>
 
-节点启动命令，其中，—etherbase指定您的钱包地址，--mine开启挖矿，--minerthreads 指定挖矿进程数量
+节点启动命令，其中，—etherbase指定您的钱包地址，--mine开启挖矿，--minerthreads 指定挖矿进程数量，--metrics 启动算力统计
 
 ```shell
-yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1 
+yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1  --metrics
 ```
 
 如果提示错误信息：“Fatal: Error starting protocol stack: listen udp :30312: bind: address already in use”，请添加参数 '--port 30313'；
@@ -222,12 +230,20 @@ yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x15e8982630b52fb
 
 <div align=center><img src="./Mac/账户变化.png" alt=""/></div>
 
+可以通过如下命令查看自己的算力
+
+```shell
+yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 attach --exec "eth.getHashrate(function(e,d){console.log(d)})"
+```
+
+第一个数值即为当前算力
+
 ### （3）.多台电脑使用gominer挖矿
 
 使用一台电脑做主节点，启动命令添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一同挖矿
 
 ```shell
-yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1 --minertype stratum
+yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1 --minertype stratum --metrics --stratum.hashrate
 ```
 
 请到下载地址 https://github.com/simplechain-org/gominer/releases 下载相应操作系统下的执行程序gominer-darwin-1.0.0-amd64（Mac版本）
@@ -326,10 +342,10 @@ yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 -h
 
 <div align=center><img src="./Ubuntu/帮助选项.png" alt=""/></div>
 
-节点启动命令，其中，—etherbase指定您的钱包地址，--mine开启挖矿，--minerthreads 指定挖矿进程数量
+节点启动命令，其中，—etherbase指定您的钱包地址，--mine开启挖矿，--minerthreads 指定挖矿进程数量，--metrics 启动算力统计
 
 ```shell
-yu@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x22040901ebb616a9f6920920f4777e7503082e6 --mine --minerthreads 1 
+yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 --etherbase 0x22040901ebb616a9f6920920f4777e7503082e6 --mine --minerthreads 1 --metrics 
 ```
 
 如果提示错误信息：“Fatal: Error starting protocol stack: listen udp :30312: bind: address already in use”，请添加参数 '--port 30313'；
@@ -342,12 +358,20 @@ yu@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 --etherbase 0x22040901ebb616a9f692
 
 <div align=center><img src="./Ubuntu/账户收益.png" alt=""/></div>
 
+可以通过如下命令查看自己的算力
+
+```shell
+yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 attach --exec "eth.getHashrate(function(e,d){console.log(d)})"
+```
+
+第一个数值即为当前算力
+
 ### （3）.多台电脑使用gominer挖矿
 
 使用一台电脑做主节点，启动命令添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一同挖矿
 
 ```shell
-yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1 --minertype stratum
+yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 --etherbase 0x15e8982630b52fb36739fcc10a217a460465a5ac --mine --minerthreads 1 --minertype stratum --metrics --stratum.hashrate
 ```
 
 请到下载地址 https://github.com/simplechain-org/gominer/releases 下载相应操作系统下的执行程序gominer-linux-1.0.0-amd64（Linux版本）
