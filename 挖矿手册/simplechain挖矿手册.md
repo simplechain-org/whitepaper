@@ -3,17 +3,17 @@
 ##目录
 
 [1.使用Windows挖矿](#1)  
- &nbsp; &nbsp; [1.1使用钱包挖矿](#1.1)  
+ &nbsp; &nbsp; [1.1.使用钱包挖矿](#1.1)  
 &nbsp; &nbsp;  [1.2.使用sipe挖矿](#1.2)  
  &nbsp; &nbsp; [1.3.多台电脑使用gominer联合挖矿](#1.3)  
 
 [2.使用Mac挖矿](#2)  
- &nbsp; &nbsp; [2.1使用钱包挖矿](#2.1)  
+ &nbsp; &nbsp; [2.1.使用钱包挖矿](#2.1)  
 &nbsp; &nbsp;  [2.2.使用sipe挖矿](#2.2)  
  &nbsp; &nbsp; [2.3.多台电脑使用gominer联合挖矿](#2.3)  
 
 [3.使用Ubuntu挖矿](#3)  
- &nbsp; &nbsp; [3.1使用钱包挖矿](#3.1)  
+ &nbsp; &nbsp; [3.1.使用钱包挖矿](#3.1)  
 &nbsp; &nbsp;  [3.2.使用sipe挖矿](#3.2)  
  &nbsp; &nbsp; [3.3.多台电脑使用gominer联合挖矿](#3.3)  
 
