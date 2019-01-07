@@ -1,8 +1,27 @@
 # simplechain挖矿手册
 
-## 1.使用Windows挖矿
+##目录
 
-### （1）使用钱包挖矿
+[1.使用Windows挖矿](#1)  
+ &nbsp; &nbsp; [1.1使用钱包挖矿](#1.1)  
+&nbsp; &nbsp;  [1.2.使用sipe挖矿](#1.2)  
+ &nbsp; &nbsp; [1.3.多台电脑使用gominer联合挖矿](#1.3)  
+
+[2.使用Mac挖矿](#2)  
+ &nbsp; &nbsp; [2.1使用钱包挖矿](#2.1)  
+&nbsp; &nbsp;  [2.2.使用sipe挖矿](#2.2)  
+ &nbsp; &nbsp; [2.3.多台电脑使用gominer联合挖矿](#2.3)  
+
+[3.使用Ubuntu挖矿](#3)  
+ &nbsp; &nbsp; [3.1使用钱包挖矿](#3.1)  
+&nbsp; &nbsp;  [3.2.使用sipe挖矿](#3.2)  
+ &nbsp; &nbsp; [3.3.多台电脑使用gominer联合挖矿](#3.3)  
+
+
+
+<h2 id='1'>1.使用Windows挖矿</h2>
+
+<h3 id='1.1'> 1.1使用钱包挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装文件SimpleNode.exe，下载成功之后双击该文件，按照步骤进行安装
 
@@ -62,7 +81,7 @@
 
 之后可以将应用最小化到后台，应用继续自动挖矿
 
-### （2）.使用sipe挖矿
+<h3 id='1.2'> 1.2.使用sipe挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下）
 
@@ -112,7 +131,7 @@ D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.getHashrate(function(e,d){co
 第一个数值即为当前算力
 
 
-### （3）.多台电脑使用gominer挖矿
+<h3 id='1.3'> 1.3.多台电脑使用gominer挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下），命令行启动过程参见上一节。
 
@@ -157,9 +176,9 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 
 
-## 2.使用Mac挖矿
+<h2 id='2'> 2.使用Mac挖矿</h2>
 
-### （1）.使用钱包挖矿
+<h3 id='2.1'> 2.1.使用钱包挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装程序SimpleNode，
 
@@ -201,7 +220,7 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 之后可以将程序最小化到后台，等待挖矿成功。
 
-### （2）.使用sipe挖矿
+<h3 id='2.2'> 2.2.使用sipe挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-darwin-1.0.0-amd64（Mac版本）
 
@@ -243,7 +262,7 @@ yusheng@qkl:~/Downloads$ ./sipe-darwin-1.0.0-amd64 attach --exec "eth.getHashrat
 
 第一个数值即为当前算力
 
-### （3）.多台电脑使用gominer挖矿
+<h3 id='2.3'> 2.3.多台电脑使用gominer联合挖矿</h3>
 
 使用一台电脑做主节点，启动命令添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一同挖矿
 
@@ -285,9 +304,9 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --stratumserver 192.168.2.
 
 
 
-## 1.使用Ubuntu挖矿
+<h2 id='3'> 3.使用Ubuntu挖矿</h2>
 
-### （1）.使用钱包挖矿
+<h3 id='3.1'> 3.1.使用钱包挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装程序SimpleNode-0.0.14.tar.gz
 
@@ -329,7 +348,7 @@ yu@qkl:~/Downloads$ tar zxvf SimpleNode-0.0.14.tar.gz
 
 之后可以将程序最小化到后台，等待挖矿成功。
 
-### （2）.使用sipe挖矿
+<h3 id='3.2'> 3.2.使用sipe挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-linux-1.0.0-amd64（Linux版本）
 
@@ -371,7 +390,7 @@ yu@qkl:~/Downloads$ ./sipe-linux-1.0.0-amd64 attach --exec "eth.getHashrate(func
 
 第一个数值即为当前算力
 
-### （3）.多台电脑使用gominer挖矿
+<h3 id='3.3'> 3.3.多台电脑使用gominer联合挖矿</h3>
 
 使用一台电脑做主节点，启动命令添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一同挖矿
 
