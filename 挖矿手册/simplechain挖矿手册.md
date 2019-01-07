@@ -1,5 +1,7 @@
 # simplechain挖矿手册
 
+
+
 ##目录
 
 [1.使用Windows挖矿](#1)  
@@ -19,9 +21,11 @@
 
 
 
+
+
 <h2 id='1'>1.使用Windows挖矿</h2>
 
-<h3 id='1.1'> 1.1使用钱包挖矿</h3>
+<h3 id='1.1'> 1.1.使用钱包挖矿</h3>
 
 请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装文件SimpleNode.exe，下载成功之后双击该文件，按照步骤进行安装
 
