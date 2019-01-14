@@ -28,7 +28,7 @@
 
 <h3 id='1.1'> 1.1.使用钱包挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装文件SimpleNode.exe，下载成功之后双击该文件，按照步骤进行安装
+请到下载地址 https://github.com/simplechain-org/simplenode/releases 下载相应操作系统下的安装文件SimpleNode.exe，下载成功之后双击该文件，按照步骤进行安装
 
 注：电脑上如果安装了360安全卫士等安全类软件，安装过程中会出现错误提示，把安全类软件退出就可以
 
@@ -90,7 +90,7 @@
 
 <h3 id='1.2'> 1.2.使用sipe挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下）
+请到下载地址 https://github.com/simplechain-org/go-simplechain/releases 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下）
 
 键盘上Windows+R键启动运行程序，输入cmd，点击确定，启动命令行
 
@@ -141,7 +141,7 @@ D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.getHashrate(function(e,d){co
 
 <h3 id='1.3'> 1.3.多台电脑使用gominer挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下），命令行启动过程参见上一节。
+请到下载地址 https://github.com/simplechain-org/go-simplechain/releases 下载相应操作系统下的执行程序sipe-windows-1.0.0-amd64.exe（Windows版本），下载下来放到相应目录下（我放到D:\下），命令行启动过程参见上一节。
 
 使用一台电脑做主节点，启动命令行添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一起挖矿
 
@@ -188,7 +188,7 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 <h3 id='2.1'> 2.1.使用钱包挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装程序SimpleNode，
+请到下载地址 https://github.com/simplechain-org/simplenode/releases 下载相应操作系统下的安装程序SimpleNode，
 
 安装成功后点击启动图标
 
@@ -232,7 +232,7 @@ D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minerna
 
 <h3 id='2.2'> 2.2.使用sipe挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-darwin-1.0.0-amd64（Mac版本）
+请到下载地址 https://github.com/simplechain-org/go-simplechain/releases 下载相应操作系统下的执行程序sipe-darwin-1.0.0-amd64（Mac版本）
 
 添加可执行权限
 
@@ -322,7 +322,7 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --stratumserver 192.168.2.
 
 <h3 id='3.1'> 3.1.使用钱包挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/simplenode/releases/tag/0.0.1 下载相应操作系统下的安装程序SimpleNode-0.0.14.tar.gz
+请到下载地址 https://github.com/simplechain-org/simplenode/releases 下载相应操作系统下的安装程序SimpleNode-0.0.14.tar.gz
 
 解压文件
 
@@ -367,7 +367,7 @@ yu@qkl:~/Downloads$ tar zxvf SimpleNode-0.0.14.tar.gz
 
 <h3 id='3.2'> 3.2.使用sipe挖矿</h3>
 
-请到下载地址 https://github.com/simplechain-org/go-simplechain/releases/tag/v1.0.0 下载相应操作系统下的执行程序sipe-linux-1.0.0-amd64（Linux版本）
+请到下载地址 https://github.com/simplechain-org/go-simplechain/releases 下载相应操作系统下的执行程序sipe-linux-1.0.0-amd64（Linux版本）
 
 添加可执行权限
 
