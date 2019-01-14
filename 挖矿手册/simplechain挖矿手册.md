@@ -118,7 +118,7 @@ D:\>sipe-windows-1.0.0-amd64.exe -h
 
 ```powershell
 D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
-27be1ec --mine --minerthreads 1 --port 30313 --datadir sipewa --ipcdisable --metrics
+27be1ec --mine --minerthreads 1 --port 30313 --ipcdisable --metrics
 ```
 
 如果出现下图红框中的“mined potential block”，表示挖矿成功
@@ -167,8 +167,7 @@ D:\>gominer-windows-1.0.0-amd64.exe -h
 使用如下命令连接主节点一同挖矿
 
 ```powershell
-D:\>gominer-windows-1.0.0-amd64.exe --stratumserver 192.168.9.224:8801 --minername 1
- --stratumpasswd 1
+D:\>gominer-windows-1.0.0-amd64.exe --server 192.168.9.224:8801 --name 1 --password 1
 ```
 
 <div align=center><img src="./Windows/gominer%E8%BF%9E%E6%8E%A5%E4%B8%BB%E8%8A%82%E7%82%B9%E6%8C%96%E7%9F%BF.png" width=600 alt=""/></div>
@@ -301,7 +300,7 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 -h
 使用如下命令连接主节点一同挖矿
 
 ```shell
-yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --stratumserver 192.168.2.189:8801 --minername 1 --stratumpasswd 1
+yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --server 192.168.2.189:8801 --name 1 --password 1
 ```
 
 <div align=center><img src="./Mac/gominer命令.png" alt=""/></div>
@@ -437,7 +436,7 @@ yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 -h
 使用如下命令连接主节点一同挖矿
 
 ```shell
-yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 --stratumserver 192.168.2.189:8801 --minername 1 --stratumpasswd 1
+yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 --server 192.168.2.189:8801 --name 1 --password 1
 ```
 
 <div align=center><img src="./Ubuntu/gominer挖矿.png" alt=""/></div>
