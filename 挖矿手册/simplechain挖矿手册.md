@@ -324,7 +324,7 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --server 192.168.2.189:880
 可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
 
 ```shell
-yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 attach "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 attach --exec "eth.stratumHashrate('1',function(e,d){console.log(d)})"
 ```
 
 第一个数值即为gominer的算力
