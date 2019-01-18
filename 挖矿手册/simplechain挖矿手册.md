@@ -183,7 +183,7 @@ D:\>gominer-windows-1.0.0-amd64.exe --server 192.168.9.224:8801 --name 1 --passw
 可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
 
 ```powershell
-D:\>sipe-windows-1.0.0-amd64.exe attach "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.stratumHashrate('1',function(e,d){console.log(d)})"
 ```
 
 第一个数值即为gominer的算力
@@ -468,7 +468,7 @@ yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 --server 192.168.2.189:8801 --na
 可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
 
 ```shell
-yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 attach "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 attach --exec "eth.stratumHashrate('1',function(e,d){console.log(d)})"
 ```
 
 第一个数值即为gominer的算力
