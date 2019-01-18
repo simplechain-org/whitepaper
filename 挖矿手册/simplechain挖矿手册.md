@@ -180,6 +180,14 @@ D:\>gominer-windows-1.0.0-amd64.exe --server 192.168.9.224:8801 --name 1 --passw
 
 <div align=center><img src="./Windows/gominer%E6%8C%96%E7%9F%BF%E6%9F%A5%E7%9C%8B%E9%92%B1%E5%8C%85%E6%94%B6%E7%9B%8A.png" width=800 alt=""/></div>
 
+可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
+
+```powershell
+D:\>sipe-windows-1.0.0-amd64.exe attach "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+```
+
+第一个数值即为gominer的算力
+
 [返回目录](#0)
 
 
@@ -312,6 +320,14 @@ yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 --server 192.168.2.189:880
 钱包中账户收益又增加了！
 
 <div align=center><img src="./Mac/账户收益.png" width=800 alt=""/></div>
+
+可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
+
+```shell
+yusheng@qkl:~/Downloads$ ./gominer-darwin-1.0.0-amd64 attach "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+```
+
+第一个数值即为gominer的算力
 
 [返回目录](#0)
 
@@ -448,6 +464,14 @@ yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 --server 192.168.2.189:8801 --na
 钱包中账户收益又增加了！
 
 <div align=center><img src="./Ubuntu/收益到帐.png" width=800 alt=""/></div>
+
+可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
+
+```shell
+yu@qkl:~/Downloads$ ./gominer-linux-1.0.0-amd64 attach "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+```
+
+第一个数值即为gominer的算力
 
 其他Linux版本参见以上操作。
 
