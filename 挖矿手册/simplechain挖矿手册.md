@@ -117,8 +117,7 @@ D:\>sipe-windows-1.0.0-amd64.exe -h
 节点启动命令：其中，--etherbase指定挖矿钱包地址，--mine开启挖矿，--minerthreads指定挖矿进程数量，--port指定端口号， --datadir在当前目录下新创建文件夹，--ipcdisable关闭IPC服务，--metrics 启动算力统计
 
 ```powershell
-D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
-27be1ec --mine --minerthreads 1 --port 30313 --ipcdisable --metrics
+D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d527be1ec --mine --minerthreads 1 --metrics
 ```
 
 如果出现下图红框中的“mined potential block”，表示挖矿成功
@@ -129,10 +128,10 @@ D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
 
 <div align=center><img src="./Windows/sipe%E9%80%9A%E8%BF%87%E9%92%B1%E5%8C%85%E6%9F%A5%E8%AF%A2%E6%94%B6%E7%9B%8A.png" width=800 alt="账户收益"/></div>
 
-可以通过如下命令查看自己的算力
+可以通过如下命令查看自己的算力(重启一个cmd,在sipe-windows-1.0.0-amd64.exe的目录下)
 
 ```powershell
-D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.getHashrate(function(e,d){console.log(d)})"
+D:\>sipe-windows-1.0.0-amd64.exe attach ipc:\\.\pipe\sipe.ipc --exec "eth.getHashrate(function(e,d){console.log(d)})"
 ```
 
 第一个数值即为当前算力
@@ -146,8 +145,7 @@ D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.getHashrate(function(e,d){co
 使用一台电脑做主节点，启动命令行添加参数'--minertype stratum'，此时启动电脑可以通过stratum协议连接该电脑一起挖矿
 
 ```powershell
-D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d5
-27be1ec --mine --minerthreads 1 --ipcdisable --minertype stratum --metrics --stratum.hashrate
+D:\>sipe-windows-1.0.0-amd64.exe --etherbase 0x8416c39e6f6117b824aa379ea2f2373d527be1ec --mine --minerthreads 1 --minertype stratum --metrics --stratum.hashrate
 ```
 
 当出现下图中情况，说明主节点已经启动，开始在挖矿了
@@ -180,10 +178,10 @@ D:\>gominer-windows-1.0.0-amd64.exe --server 192.168.9.224:8801 --name 1 --passw
 
 <div align=center><img src="./Windows/gominer%E6%8C%96%E7%9F%BF%E6%9F%A5%E7%9C%8B%E9%92%B1%E5%8C%85%E6%94%B6%E7%9B%8A.png" width=800 alt=""/></div>
 
-可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name）
+可以通过如下命令查看gominer的算力（单引号中的参数为gominer的name,以下命令需在sipe-windows-1.0.0-amd64.exe所在目录中执行）
 
 ```powershell
-D:\>sipe-windows-1.0.0-amd64.exe attach --exec "eth.stratumHashrate('1',function(e,d){console.log(d)})"
+D:\>sipe-windows-1.0.0-amd64.exe attach ipc:\\.\pipe\sipe.ipc --exec "eth.stratumHashrate('1',function(e,d){console.log(d)})"
 ```
 
 第一个数值即为gominer的算力
